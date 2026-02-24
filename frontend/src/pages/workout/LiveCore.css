@@ -1,0 +1,231 @@
+.core-screen {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.core-border {
+  position: fixed;
+  inset: 0;
+  border: 4px solid var(--accent-secondary);
+  pointer-events: none;
+  z-index: 200;
+  transition: opacity 2s linear;
+}
+
+.core-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  z-index: 10;
+}
+
+.core-header-center { text-align: center; flex: 1; }
+
+.core-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.core-subtitle {
+  font-size: 12px;
+  color: var(--accent-secondary);
+  font-weight: 600;
+}
+
+.core-timer-small {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-primary);
+  font-variant-numeric: tabular-nums;
+  min-width: 50px;
+  text-align: right;
+}
+
+/* Exercise list */
+.core-exercise-list {
+  padding: var(--space-3) 0;
+}
+
+.core-exercise-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px var(--space-4);
+  border-bottom: 1px solid var(--border-color);
+}
+.core-exercise-item:last-child { border-bottom: none; }
+
+.core-ex-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.core-ex-info { flex: 1; }
+
+.core-ex-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.core-ex-detail {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+/* Main area */
+.core-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+}
+
+/* Start state */
+.core-start {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  justify-content: center;
+}
+
+.core-start-instruction {
+  font-size: 15px;
+  color: var(--text-secondary);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.core-start-btn {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Active state */
+.core-active {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-4) 0;
+}
+
+/* Round log button */
+.round-btn-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.round-log-btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  gap: var(--space-2);
+  transition: transform 150ms ease-out, box-shadow 150ms;
+  border: none;
+}
+
+.round-log-btn:active:not(:disabled) {
+  transform: scale(0.95);
+  box-shadow: var(--shadow-sm);
+}
+
+.round-log-btn.paused {
+  background: var(--bg-card);
+}
+
+.round-count {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.round-btn-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  white-space: pre-line;
+  opacity: 0.85;
+}
+
+/* Timer display */
+.core-timer-display {
+  text-align: center;
+}
+
+.core-timer-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.core-timer-label {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-top: 4px;
+}
+
+/* Timer bar */
+.core-timer-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--border-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.core-timer-bar-fill {
+  height: 100%;
+  background: var(--accent-secondary);
+  border-radius: 3px;
+  transition: width 1s linear;
+}
+
+/* Complete stat */
+.core-complete-stat {
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.loading-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  color: var(--text-secondary);
+}

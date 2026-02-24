@@ -1,0 +1,192 @@
+.progress-screen {
+  background: var(--bg-primary);
+  padding-bottom: 80px;
+}
+
+.progress-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.progress-stat {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.progress-stat-value {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.progress-stat-label {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+/* Block progress */
+.block-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--space-3) 0 var(--space-2);
+}
+
+.block-progress-count {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.block-progress-pct {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.block-progress-bar {
+  height: 8px;
+  background: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+
+.block-progress-fill {
+  height: 100%;
+  background: var(--accent-primary);
+  border-radius: 4px;
+  transition: width 500ms ease;
+}
+
+.block-type-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.block-type-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.block-type-icon { font-size: 18px; width: 24px; }
+
+.block-type-bar-container {
+  flex: 1;
+  height: 6px;
+  background: var(--border-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.block-type-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 500ms ease;
+}
+
+.block-type-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 30px;
+  text-align: right;
+}
+
+/* Weight progression */
+.progress-note {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-3);
+}
+
+.weight-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.weight-progress-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.weight-progress-item:last-child { border-bottom: none; }
+
+.weight-ex-info { flex: 1; }
+
+.weight-ex-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.weight-ex-sessions {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+.weight-ex-stats {
+  text-align: right;
+}
+
+.weight-ex-max {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.weight-ex-increase {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  margin-top: 2px;
+}
+
+/* Cardio stats */
+.cardio-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--space-3);
+}
+
+.cardio-stat { text-align: center; }
+
+.cardio-stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.cardio-stat-label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+}
+
+.empty-icon { font-size: 48px; margin-bottom: var(--space-3); }
+.empty-title { font-size: 18px; font-weight: 700; color: var(--text-primary); margin-bottom: var(--space-2); }
+.empty-desc { font-size: 14px; color: var(--text-secondary); }
