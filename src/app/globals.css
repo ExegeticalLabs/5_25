@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dawn-background: #FAFAFA;
+  --dawn-surface: #FFFFFF;
+  --dawn-citrus: #E1FF00;
+  --dawn-teal: #008080;
+}
+
+body {
+  background-color: var(--dawn-background);
+}
