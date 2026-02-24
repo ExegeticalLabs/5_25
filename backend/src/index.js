@@ -3,6 +3,8 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
+const { initializeFirebase } = require('./config/firebase');
+initializeFirebase();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
